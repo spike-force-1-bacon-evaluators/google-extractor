@@ -1,7 +1,7 @@
 FROM agapito/centos7-scala:latest
 
-COPY . /twitter-lm-extractor/
+COPY . /google-extractor/
 
-WORKDIR /twitter-lm-extractor
+WORKDIR /google-extractor
 
 ENTRYPOINT ["sbt", "-Dsbt.log.noformat=true", "clean", "scalastyle", "test:scalastyle", "test"]

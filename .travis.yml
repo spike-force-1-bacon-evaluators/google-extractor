@@ -1,0 +1,20 @@
+---
+sudo: false
+
+services:
+  - docker
+
+language: scala
+
+scala: tip
+
+script:
+  - docker build -t google-extractor .
+  - docker run --rm --name google-extractor google-extractor
+
+notifications:
+  on_success: always
+  email: false
+  slack:
+    secure: "WSgXDKq+/ua03aMbxfiwOQDoXCF5T8eDdVJZLkMnqqlJdzwS14gTcoDbcuXSDCUtTa8o3fKlzOX6r53igjCkbfTb9FWyVWH84vlhO6hQus5Nc6pdAx9hKm7DlMkT04MCeR0TiLOs1SmK3wis6pHVedqKA+Hb+ReHvPvH9ASxqC1d1WcZtTja1rcZnN7Q4oadYAtBGAFGQbJgIqGVPS4g+5GrPVEno+CkH2ux2bMgIz0L6QNIT/9PzRPYHHLOzZ9Gu45oa/a80Y/QYTjZlkOGP8FieiVHxlnb9uD7/hjo2zpOdL1+cun3RB0GkwGO9S/2gmjZiPn9wPQdN1S4YNNorlOPWofBEkAE2cXc61FFClht5nMIFoAoXknWDjgm9WRrfykDPlMc+mEqqIYN5KSkVVv8Yi2AtFAXywCQCGXBh3D4b3PlKwk6I3sQIGvzQJl1gaxzNrwFwwSLEgWFa8OuG1NwSa/3FZGqwDib2XcLAua2aoWyN5iztkXeCCw+2VrbUnkGb+wGS3KgAj0tWHk3MB8qvPFv0TivQYQdm++IjLFONq+s+hGNS3JpzdNFCg6COXeCOxr0Vk/sROhbwmew+EMrDuzF38oeZHT9eaAIODnMNCTguHEdIu9qcOVT2g8Qq0SQNlQO6X7X6uUm5zYaLLN+M/5pbPrZT+nXZuQsLwk="
+...
