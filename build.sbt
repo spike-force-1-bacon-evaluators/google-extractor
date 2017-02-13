@@ -20,6 +20,9 @@ libraryDependencies += "com.typesafe" % "config" % "1.3.1"
 // https://mvnrepository.com/artifact/org.scalatest/scalatest_2.11
 libraryDependencies += "org.scalatest" % "scalatest_2.11" % "3.0.1"
 
+// https://mvnrepository.com/artifact/com.typesafe.play/play-json_2.11
+libraryDependencies += "com.typesafe.play" % "play-json_2.11" % "2.5.12"
+
 // https://mvnrepository.com/artifact/com.google.maps/google-maps-services
 libraryDependencies += "com.google.maps" % "google-maps-services" % "0.1.17"
 

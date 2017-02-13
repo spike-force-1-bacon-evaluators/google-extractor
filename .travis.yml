@@ -13,6 +13,7 @@ branches:
   - master
 
 script:
+  - ./scripts/google.sh
   - docker build -t google-extractor .
   - docker run --rm --name google-extractor google-extractor
 
@@ -20,5 +21,5 @@ notifications:
   on_success: always
   email: false
   slack:
-    secure: "WSgXDKq+/ua03aMbxfiwOQDoXCF5T8eDdVJZLkMnqqlJdzwS14gTcoDbcuXSDCUtTa8o3fKlzOX6r53igjCkbfTb9FWyVWH84vlhO6hQus5Nc6pdAx9hKm7DlMkT04MCeR0TiLOs1SmK3wis6pHVedqKA+Hb+ReHvPvH9ASxqC1d1WcZtTja1rcZnN7Q4oadYAtBGAFGQbJgIqGVPS4g+5GrPVEno+CkH2ux2bMgIz0L6QNIT/9PzRPYHHLOzZ9Gu45oa/a80Y/QYTjZlkOGP8FieiVHxlnb9uD7/hjo2zpOdL1+cun3RB0GkwGO9S/2gmjZiPn9wPQdN1S4YNNorlOPWofBEkAE2cXc61FFClht5nMIFoAoXknWDjgm9WRrfykDPlMc+mEqqIYN5KSkVVv8Yi2AtFAXywCQCGXBh3D4b3PlKwk6I3sQIGvzQJl1gaxzNrwFwwSLEgWFa8OuG1NwSa/3FZGqwDib2XcLAua2aoWyN5iztkXeCCw+2VrbUnkGb+wGS3KgAj0tWHk3MB8qvPFv0TivQYQdm++IjLFONq+s+hGNS3JpzdNFCg6COXeCOxr0Vk/sROhbwmew+EMrDuzF38oeZHT9eaAIODnMNCTguHEdIu9qcOVT2g8Qq0SQNlQO6X7X6uUm5zYaLLN+M/5pbPrZT+nXZuQsLwk="
+    secure: "S/peey3kWylUlpinP8j/2//rYM86cE5p71OsvD/A4Cx8EG07F5OaCvybVuO4GYhDextvgP/JhSO1faTh/nzSlr2zVWG3j0WOY8Fmhly5sQY3A5mkcBoE3jlu4Y4jk2EDs/wJXFcHb+g2MUC6h36/PnbhQore6InkcO49bgiI1/JKu1ehX1b7bG70lHZDhi1o6SYSaHYEAnotmRiCq5EPFTuFHHRpo14Y9ADuJjiRTFzB4han2KO1ACtpFT3Ub9MLZSUxRPGNKTCwnz9g7+AcsLkiydk2qXbUDTdRTEPB0sUNtUCqHFM0CLY3W/9IQP90exxoFe/jJqekvlZbl9aU8gRx33H1eQKQsxKiGjmtcGr7CpVnExANg7mbj4PWgXb7e+XiU42L4iYYUJkEJ+UQgvhgszMKYoLMwj4jr2caK7dLmHV90QbuBTuyr6RujVkcpIED5q+iRBvta8k1L3TMrX72nOgpJNUqH7or4CI+iEkfjXUcHLjwnEEl9W2G9GiJ4S6bUrRZ9rrEMBQltp7kqrd/Hqy0cxQkFEDLcCbWIzBeNqlYtJElcExFKNxhbhQQejEdF5b6samHrDe8v/h8mtKCgwT6vhXQZEBI8IgcR1fyU1VRORS9Hp+myDV/xzR+oOGtPrh5LLkuJzgAXH/UnP+4pcS46FJVGAVLYFNRBEk="
 ...
