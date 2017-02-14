@@ -1,7 +1,5 @@
 package org.sf1bacon.googleextractor
 
-import com.google.maps.NearbySearchRequest
-import com.google.maps.model.{LatLng, PlaceType, PlacesSearchResponse, RankBy}
 import org.sf1bacon.googleextractor.GoogleAPI._
 import org.scalatest.FunSuite
 

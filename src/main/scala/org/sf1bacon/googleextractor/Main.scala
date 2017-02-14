@@ -1,6 +1,7 @@
 package org.sf1bacon.googleextractor
 
 import org.sf1bacon.googleextractor.GoogleAPI._
+import org.sf1bacon.googleextractor.GeoTools._
 
 /**
   * Created by agapito on 09/02/2017.
@@ -14,4 +15,5 @@ object Main extends App {
 
   println(s"[INFO] Got data for ${results.length} places.")
   results.foreach { r => println(s"  ${r.name} (${r.types.mkString(",")})") }
+
 }
