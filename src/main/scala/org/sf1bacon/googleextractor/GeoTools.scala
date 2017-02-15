@@ -8,7 +8,9 @@ import scala.math._
   */
 object GeoTools {
 
-  // volumetric mean radius of earth in meters (cf. http://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html )
+  /**
+    * volumetric mean radius of earth in meters (cf. http://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html )
+    */
   val earthR = 6371008
 
   /**

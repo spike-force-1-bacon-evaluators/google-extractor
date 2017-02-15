@@ -2,7 +2,7 @@ package org.sf1bacon.googleextractor
 
 import com.google.maps.errors.{InvalidRequestException, OverDailyLimitException, OverQueryLimitException}
 import com.google.maps.model._
-import com.google.maps.{GeoApiContext, NearbySearchRequest}
+import com.google.maps.{GeoApiContext, NearbySearchRequest, PlaceDetailsRequest}
 import com.typesafe.config.ConfigFactory
 
 import scala.annotation.tailrec
@@ -11,6 +11,8 @@ import scala.annotation.tailrec
   * Created by agapito on 09/02/2017.
   */
 object GoogleAPI {
+
+  val gContext: GeoApiContext = setContext("google.conf")
 
   def setContext(confFile: String): GeoApiContext = {
     val config = ConfigFactory.load(confFile)
@@ -49,8 +51,6 @@ object GoogleAPI {
 
   def restaurantSearch(center: (Double, Double), radius: Int): List[PlacesSearchResult] = {
 
-    val gContext = setContext("google.conf")
-
     val search: PlacesSearchResponse =
       new NearbySearchRequest(gContext)
         .language("en")
@@ -62,6 +62,14 @@ object GoogleAPI {
         .await()
 
     getAllResults(search, gContext, filterRestaurants(search))
+
+  }
+
+  def getPlaceInfo(googleID: String): PlaceDetails ={
+
+    new PlaceDetailsRequest(gContext)
+      .placeId(googleID)
+      .await()
 
   }
 }
