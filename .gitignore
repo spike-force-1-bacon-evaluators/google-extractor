@@ -1,19 +1,7 @@
 # scala
 project/project/
-project/target/
+target/
 *.class
-
-## target
-.history
-resolution-cache/ 
-streams/
-test-reports/
-
-## target/scala-2.11
-classes/
-resource_managed/
-src_managed/
-test-classes/
 
 # intelij
 .idea/*
