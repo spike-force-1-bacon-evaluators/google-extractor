@@ -64,7 +64,50 @@
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.sf1bacon.googleextractor.Place" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PlaceextendsProductwithSerializable"></a>
+      <a id="Place:Place"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Place.html"><span class="name">Place</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="address">address: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="formattedAddress">formattedAddress: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="phoneNumber">phoneNumber: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="latlong">latlong: (<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>)</span>, <span name="vicinity">vicinity: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="googleRating">googleRating: <span class="extype" name="scala.Double">Double</span></span>, <span name="priceLevel">priceLevel: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="website">website: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="googleURL">googleURL: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="googleID">googleID: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="reviews">reviews: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.List">List</span>[<a href="Review.html" class="extype" name="org.sf1bacon.googleextractor.Review">Review</a>]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.package@PlaceextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Stores the google places data for a venue
+</p><div class="fullcomment"><div class="comment cmt"><p>Stores the google places data for a venue
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>name of the place</p></dd><dt class="param">address</dt><dd class="cmt"><p>address map for the place (keys are <code>street_number</code>, <code>route</code>, <code>locality</code>, <code>postal_town</code>,
+                        <code>administrative_area_level_2</code>, <code>administrative_area_level_1</code>, <code>country</code>, <code>postal_code</code> )
+                        See <code>com.google.maps.model.AddressComponentType</code>.</p></dd><dt class="param">formattedAddress</dt><dd class="cmt"><p>string with a simple address for the place</p></dd><dt class="param">phoneNumber</dt><dd class="cmt"><p>international phone number</p></dd><dt class="param">latlong</dt><dd class="cmt"><p>geographic locations</p></dd><dt class="param">vicinity</dt><dd class="cmt"><p>vicinity of the place</p></dd><dt class="param">googleRating</dt><dd class="cmt"><p>overall google average rating</p></dd><dt class="param">priceLevel</dt><dd class="cmt"><p>google price level</p></dd><dt class="param">website</dt><dd class="cmt"><p>place's private website</p></dd><dt class="param">googleURL</dt><dd class="cmt"><p>link to google's place info</p></dd><dt class="param">googleID</dt><dd class="cmt"><p>google placeID for this place</p></dd><dt class="param">reviews</dt><dd class="cmt"><p>option with a list of <a href="Review.html" class="extype" name="org.sf1bacon.googleextractor.Review">Review</a>s for this place</p></dd></dl></div>
+    </li><li name="org.sf1bacon.googleextractor.Review" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ReviewextendsProductwithSerializable"></a>
+      <a id="Review:Review"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Review.html"><span class="name">Review</span></a><span class="params">(<span name="rating">rating: <span class="extype" name="scala.Int">Int</span></span>, <span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="time">time: <span class="extype" name="org.joda.time.Instant">Instant</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.package@ReviewextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Google places review
+</p><div class="fullcomment"><div class="comment cmt"><p>Google places review
+</p></div><dl class="paramcmts block"><dt class="param">rating</dt><dd class="cmt"><p>star rating (1 to 5)</p></dd><dt class="param">text</dt><dd class="cmt"><p>text of the review</p></dd><dt class="param">time</dt><dd class="cmt"><p>time in unix epoch (seconds since midnight January 1 1970 UTC)</p></dd></dl></div>
+    </li></ol>
+            </div>
 
         
 
@@ -121,6 +164,23 @@
       </a>
     </span>
       <p class="shortcomment cmt">Created by agapito on 09/02/2017.</p>
+    </li><li name="org.sf1bacon.googleextractor.Place" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Place"></a>
+      <a id="Place:Place"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Place$.html"><span class="name">Place</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.package@Place" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li></ol>
             </div>
 

@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>GoogleAPI - org.sf1bacon.googleextractor.GoogleAPI</title>
-          <meta name="description" content="GoogleAPI - org.sf1bacon.googleextractor.GoogleAPI" />
-          <meta name="keywords" content="GoogleAPI org.sf1bacon.googleextractor.GoogleAPI" />
+          <title>Review - org.sf1bacon.googleextractor.Review</title>
+          <meta name="description" content="Review - org.sf1bacon.googleextractor.Review" />
+          <meta name="keywords" content="Review org.sf1bacon.googleextractor.Review" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
-            var hash = 'org.sf1bacon.googleextractor.GoogleAPI$';
+            var hash = 'org.sf1bacon.googleextractor.Review';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -26,14 +26,14 @@
    	  </script>
     
         </head>
-        <body class="value">
+        <body class="type">
       <div id="definition">
-        <img alt="Object" src="../../../lib/object_big.png" />
+        <img alt="Class" src="../../../lib/class_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.sf1bacon">sf1bacon</a>.<a href="package.html" class="extype" name="org.sf1bacon.googleextractor">googleextractor</a></p>
-        <h1>GoogleAPI</h1><h3><span class="morelinks"><div>Related Doc:
+        <h1>Review</h1><h3><span class="morelinks"><div>Related Doc:
             <a href="package.html" class="extype" name="org.sf1bacon.googleextractor">package googleextractor</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -42,17 +42,17 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">object</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">GoogleAPI</span>
+        <span class="name">Review</span><span class="params">(<span name="rating">rating: <span class="extype" name="scala.Int">Int</span></span>, <span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="time">time: <span class="extype" name="org.joda.time.Instant">Instant</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Created by agapito on 09/02/2017.
-</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Google places review
+</p></div><dl class="paramcmts block"><dt class="param">rating</dt><dd class="cmt"><p>star rating (1 to 5)</p></dd><dt class="param">text</dt><dd class="cmt"><p>text of the review</p></dd><dt class="param">time</dt><dd class="cmt"><p>time in unix epoch (seconds since midnight January 1 1970 UTC)</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -70,7 +70,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="org.sf1bacon.googleextractor.GoogleAPI"><span>GoogleAPI</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="org.sf1bacon.googleextractor.Review"><span>Review</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -87,7 +87,27 @@
 
       <div id="template">
         <div id="allMembers">
-        
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.sf1bacon.googleextractor.Review#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(rating:Int,text:String,time:org.joda.time.Instant):org.sf1bacon.googleextractor.Review"></a>
+      <a id="&lt;init&gt;:Review"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Review</span><span class="params">(<span name="rating">rating: <span class="extype" name="scala.Int">Int</span></span>, <span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="time">time: <span class="extype" name="org.joda.time.Instant">Instant</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@&lt;init&gt;(rating:Int,text:String,time:org.joda.time.Instant):org.sf1bacon.googleextractor.Review" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">rating</dt><dd class="cmt"><p>star rating (1 to 5)</p></dd><dt class="param">text</dt><dd class="cmt"><p>text of the review</p></dd><dt class="param">time</dt><dd class="cmt"><p>time in unix epoch (seconds since midnight January 1 1970 UTC)</p></dd></dl></div>
+    </li></ol>
+            </div>
 
         
 
@@ -107,7 +127,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -124,7 +144,7 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@##():Int" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@##():Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -141,7 +161,7 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -158,7 +178,7 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -175,7 +195,7 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@clone():Object" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@clone():Object" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -198,47 +218,11 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.sf1bacon.googleextractor.GoogleAPI#filterRestaurants" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="filterRestaurants(search:com.google.maps.model.PlacesSearchResponse):List[com.google.maps.model.PlacesSearchResult]"></a>
-      <a id="filterRestaurants(PlacesSearchResponse):List[PlacesSearchResult]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">filterRestaurants</span><span class="params">(<span name="search">search: <span class="extype" name="com.google.maps.model.PlacesSearchResponse">PlacesSearchResponse</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="com.google.maps.model.PlacesSearchResult">PlacesSearchResult</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@filterRestaurants(search:com.google.maps.model.PlacesSearchResponse):List[com.google.maps.model.PlacesSearchResult]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Filter unwanted results from the <code>PlacesSearchResponse</code> and convert them to <code>List</code>
-</p><div class="fullcomment"><div class="comment cmt"><p>Filter unwanted results from the <code>PlacesSearchResponse</code> and convert them to <code>List</code>
-</p></div><dl class="paramcmts block"><dt class="param">search</dt><dd class="cmt"><p><code>PlacesSearchResponse</code> instance of restaurant search results</p></dd><dt>returns</dt><dd class="cmt"><p>List of <code>PlacesSearchResult</code></p></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -251,7 +235,7 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -260,46 +244,6 @@
       
       <span class="symbol">classOf[java.lang.Throwable]</span>
     </span>)</span>
-              
-        </dd></dl></div>
-    </li><li name="org.sf1bacon.googleextractor.GoogleAPI#gContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="gContext:com.google.maps.GeoApiContext"></a>
-      <a id="gContext:GeoApiContext"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">gContext</span><span class="result">: <span class="extype" name="com.google.maps.GeoApiContext">GeoApiContext</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@gContext:com.google.maps.GeoApiContext" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">GeoApiContext used in all connections to all the GoogleAPI
-</p>
-    </li><li name="org.sf1bacon.googleextractor.GoogleAPI#getAllResults" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getAllResults(search:com.google.maps.model.PlacesSearchResponse,context:com.google.maps.GeoApiContext,result:List[com.google.maps.model.PlacesSearchResult]):List[com.google.maps.model.PlacesSearchResult]"></a>
-      <a id="getAllResults(PlacesSearchResponse,GeoApiContext,List[PlacesSearchResult]):List[PlacesSearchResult]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getAllResults</span><span class="params">(<span name="search">search: <span class="extype" name="com.google.maps.model.PlacesSearchResponse">PlacesSearchResponse</span></span>, <span name="context">context: <span class="extype" name="com.google.maps.GeoApiContext">GeoApiContext</span></span>, <span name="result">result: <span class="extype" name="scala.List">List</span>[<span class="extype" name="com.google.maps.model.PlacesSearchResult">PlacesSearchResult</span>]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="com.google.maps.model.PlacesSearchResult">PlacesSearchResult</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@getAllResults(search:com.google.maps.model.PlacesSearchResponse,context:com.google.maps.GeoApiContext,result:List[com.google.maps.model.PlacesSearchResult]):List[com.google.maps.model.PlacesSearchResult]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Get all the results for the search by requesting the next pages (if available)
-</p><div class="fullcomment"><div class="comment cmt"><p>Get all the results for the search by requesting the next pages (if available)
-</p></div><dl class="paramcmts block"><dt class="param">search</dt><dd class="cmt"><p><code>PlacesSearchResponse</code> resulting from a <code>NearbySearchRequest</code></p></dd><dt class="param">context</dt><dd class="cmt"><p><code>GeoApiContext</code> for the connection</p></dd><dt class="param">result</dt><dd class="cmt"><p>List of <code>PlacesSearchResult</code> for the search</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@tailrec</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -314,43 +258,7 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.sf1bacon.googleextractor.GoogleAPI#getPlaceInfo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getPlaceInfo(googleID:String):com.google.maps.model.PlaceDetails"></a>
-      <a id="getPlaceInfo(String):PlaceDetails"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getPlaceInfo</span><span class="params">(<span name="googleID">googleID: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="com.google.maps.model.PlaceDetails">PlaceDetails</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@getPlaceInfo(googleID:String):com.google.maps.model.PlaceDetails" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Request info about a place
-</p><div class="fullcomment"><div class="comment cmt"><p>Request info about a place
-</p></div><dl class="paramcmts block"><dt class="param">googleID</dt><dd class="cmt"><p>google placeID of the place</p></dd><dt>returns</dt><dd class="cmt"><p><code>PlaceDetails</code> instance</p></dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -367,7 +275,7 @@
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -384,7 +292,7 @@
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -401,7 +309,7 @@
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@notify():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -418,51 +326,28 @@
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.sf1bacon.googleextractor.GoogleAPI#restaurantSearch" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="restaurantSearch(center:(Double,Double),radius:Int):List[com.google.maps.model.PlacesSearchResult]"></a>
-      <a id="restaurantSearch((Double,Double),Int):List[PlacesSearchResult]"></a>
+    </li><li name="org.sf1bacon.googleextractor.Review#rating" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rating:Int"></a>
+      <a id="rating:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">restaurantSearch</span><span class="params">(<span name="center">center: (<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Double">Double</span>)</span>, <span name="radius">radius: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="com.google.maps.model.PlacesSearchResult">PlacesSearchResult</span>]</span>
+        <span class="name">rating</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@restaurantSearch(center:(Double,Double),radius:Int):List[com.google.maps.model.PlacesSearchResult]" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@rating:Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Search for restaurants
-</p><div class="fullcomment"><div class="comment cmt"><p>Search for restaurants
-</p></div><dl class="paramcmts block"><dt class="param">center</dt><dd class="cmt"><p>geographical center for the search</p></dd><dt class="param">radius</dt><dd class="cmt"><p>radius (in meters) for the search</p></dd><dt>returns</dt><dd class="cmt"><p>List of <code>PlacesSearchResult</code> for the search</p></dd></dl></div>
-    </li><li name="org.sf1bacon.googleextractor.GoogleAPI#setContext" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="setContext(confFile:String):com.google.maps.GeoApiContext"></a>
-      <a id="setContext(String):GeoApiContext"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">setContext</span><span class="params">(<span name="confFile">confFile: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="com.google.maps.GeoApiContext">GeoApiContext</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@setContext(confFile:String):com.google.maps.GeoApiContext" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Set up a Google GeoApiContext instance used for all connections.</p><div class="fullcomment"><div class="comment cmt"><p>Set up a Google GeoApiContext instance used for all connections.
-This requires a configuration placed in <code>src/main/resources</code>
-with the API key:</p><pre>google {
-  key = <span class="lit">"YOUR API KEY"</span>
-}</pre></div><dl class="paramcmts block"><dt class="param">confFile</dt><dd class="cmt"><p>name of the configuration file</p></dd><dt>returns</dt><dd class="cmt"><p>new <code>GeoApiContext</code> instance</p></dd></dl></div>
+      <p class="shortcomment cmt">star rating (1 to 5)</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -475,28 +360,45 @@ with the API key:</p><pre>google {
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
+    </li><li name="org.sf1bacon.googleextractor.Review#text" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="text:String"></a>
+      <a id="text:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">text</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@toString():String" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@text:String" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <p class="shortcomment cmt">text of the review</p>
+    </li><li name="org.sf1bacon.googleextractor.Review#time" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="time:org.joda.time.Instant"></a>
+      <a id="time:Instant"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">time</span><span class="result">: <span class="extype" name="org.joda.time.Instant">Instant</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@time:org.joda.time.Instant" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">time in unix epoch (seconds since midnight January 1 1970 UTC)</p>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -509,7 +411,7 @@ with the API key:</p><pre>google {
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@wait():Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -532,7 +434,7 @@ with the API key:</p><pre>google {
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -555,7 +457,7 @@ with the API key:</p><pre>google {
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sf1bacon.googleextractor.GoogleAPI$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sf1bacon.googleextractor.Review@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -575,7 +477,15 @@ with the API key:</p><pre>google {
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

@@ -22,6 +22,7 @@ import com.google.maps.model.PlaceDetails
   * @param website          place's private website
   * @param googleURL        link to google's place info
   * @param googleID         google placeID for this place
+  * @param reviews          option with a list of [[Review]]s for this place
   */
 case class Place(name: String,
                  address: Map[String, String],
@@ -38,6 +39,11 @@ case class Place(name: String,
 
 object Place {
 
+  /** [[Place]] constructor from `com.google.maps.model.PlaceDetails`
+    *
+    * @param place
+    * @return new [[Place]] instance
+    */
   def apply(place: PlaceDetails): Place =
 
     new Place(

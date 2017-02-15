@@ -36,8 +36,17 @@ class GoogleAPITest extends FunSuite {
 
   test("Can get data from Google Places") {
     // scalastyle:off magic.number
-    assert(restaurantSearch((51.508557, -0.127612), 50000).length == 60)
+    val search = restaurantSearch((51.508557, -0.127612), 50000)
     // scalastyle:on magic.number
+
+    val testID = search.head.placeId
+    val testPlace = getPlaceInfo(testID)
+
+    // searching with the maximum radius (50km) should return 60 results (the maximum that can be returned)
+    assert(search.length == 60)
+
+    // searching for a placeID should return info
+    assert(testPlace.name != "")
   }
 
 }

@@ -12,7 +12,24 @@ import scala.annotation.tailrec
   */
 object GoogleAPI {
 
+  /**
+    * GeoApiContext used in all connections to all the GoogleAPI
+    */
   val gContext: GeoApiContext = setContext("google.conf")
+
+  /**
+    * Set up a Google GeoApiContext instance used for all connections.
+    * This requires a configuration placed in `src/main/resources`
+    * with the API key:
+    * {{{
+    *   google {
+    *     key = "YOUR API KEY"
+    *   }
+    * }}}
+    *
+    * @param confFile name of the configuration file
+    * @return new `GeoApiContext` instance
+    */
 
   def setContext(confFile: String): GeoApiContext = {
     val config = ConfigFactory.load(confFile)
@@ -24,12 +41,26 @@ object GoogleAPI {
       .toggleifExceptionIsAllowedToRetry(classOf[OverQueryLimitException], false)
   }
 
+  /**
+    * Filter unwanted results from the `PlacesSearchResponse` and convert them to `List`
+    *
+    * @param search `PlacesSearchResponse` instance of restaurant search results
+    * @return List of `PlacesSearchResult`
+    */
   def filterRestaurants(search: PlacesSearchResponse): List[PlacesSearchResult] = {
     search.results
       .filter(r => !r.types.contains("lodging") && !r.types.contains("meal_takeaway"))
       .toList
   }
 
+  /**
+    * Get all the results for the search by requesting the next pages (if available)
+    *
+    * @param search  `PlacesSearchResponse` resulting from a `NearbySearchRequest`
+    * @param context `GeoApiContext` for the connection
+    * @param result  List of `PlacesSearchResult` for the search
+    * @return
+    */
   @tailrec
   def getAllResults(search: PlacesSearchResponse,
                     context: GeoApiContext,
@@ -49,6 +80,13 @@ object GoogleAPI {
 
   }
 
+  /**
+    * Search for restaurants
+    *
+    * @param center geographical center for the search
+    * @param radius radius (in meters) for the search
+    * @return List of `PlacesSearchResult` for the search
+    */
   def restaurantSearch(center: (Double, Double), radius: Int): List[PlacesSearchResult] = {
 
     val search: PlacesSearchResponse =
@@ -65,7 +103,13 @@ object GoogleAPI {
 
   }
 
-  def getPlaceInfo(googleID: String): PlaceDetails ={
+  /**
+    * Request info about a place
+    *
+    * @param googleID google placeID of the place
+    * @return `PlaceDetails` instance
+    */
+  def getPlaceInfo(googleID: String): PlaceDetails = {
 
     new PlaceDetailsRequest(gContext)
       .placeId(googleID)

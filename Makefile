@@ -4,7 +4,7 @@ PROJECT_NAME := Google Places - Review Extractor
 PROJECT_ALIAS := bacon
 IMAGE_NAME := google-extractor
 
-.PHONY: help build test clean
+.PHONY: help build test clean docs
 
 help:
 	@echo "------------------------------------------------------------------------"
@@ -21,3 +21,8 @@ test: build ## Run unit tests
 clean: ## Remove images and containers
 	@./scripts/rm-image.sh ${PROJECT_ALIAS}/${IMAGE_NAME}
 	@./scripts/rm-container.sh ${IMAGE_NAME}
+
+docs:
+	@rm -rf docs/
+	sbt doc
+	@cp -r target/scala-2.11/api/ docs/

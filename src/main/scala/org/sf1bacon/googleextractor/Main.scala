@@ -1,6 +1,5 @@
 package org.sf1bacon.googleextractor
 
-import com.google.maps.model.{ AddressComponentType, PlaceDetails}
 import org.sf1bacon.googleextractor.GoogleAPI._
 import org.sf1bacon.googleextractor.GeoTools._
 
@@ -25,12 +24,12 @@ object Main extends App {
   points.foreach(p => println(f"  (${p._1}%.6f,${p._2}%.6f) "))
 
   for (p <- points) {
-    println(f"[INFO] Searching around point: (${p._1}%.6f,${p._2}%.6f)")
+    print(f"[INFO] Searching around point: (${p._1}%.6f,${p._2}%.6f)")
     val placeIDs = restaurantSearch(p, searchRadius).map(r => r.placeId)
+    println(s" --> Got data for ${placeIDs.length} places.")
 
-    println(s"[INFO] Got data for ${placeIDs.length} places.")
     val places = placeIDs.map(getPlaceInfo).map(Place(_))
-  }
 
+  }
 
 }
