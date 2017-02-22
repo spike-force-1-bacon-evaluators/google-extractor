@@ -6,6 +6,7 @@ Commands:
 ```
 make test                              // run unit tests
 ```
+For more information see this repo's [Scaladoc](https://spike-force-1-bacon-evaluators.github.io/google-extractor/#org.sf1bacon.googleextractor.package)
 
 ## [Documentation](https://github.com/spike-force-1-bacon-evaluators/documentation/blob/master/README.md)
 
