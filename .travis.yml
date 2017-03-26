@@ -8,10 +8,6 @@ language: scala
 
 scala: tip
 
-branches:
-  except:
-  - master
-
 script:
   - ./scripts/google.sh
   - docker build -t google-extractor .
